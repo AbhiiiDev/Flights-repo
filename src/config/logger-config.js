@@ -13,7 +13,7 @@ const myFormat = printf(({ level, message, timestamp }) => {
       timestamp({format:'YYYY-MM-DD HH:mm:ss'}),
       myFormat
     ),
-    transports: [new transports.Console(),
+    transports: [
         new transports.File({filename:'combined.log'})
     ],
   });
