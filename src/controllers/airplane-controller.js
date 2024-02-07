@@ -10,6 +10,7 @@ async function createAirplane(req,res)
             modelNumber:req.body.modelNumber,
             capacity:req.body.capacity,
         });
+       await console.log(airplane)
         return res.status(StatusCodes.CREATED).json({
             success:true,
             message:"successfully crated the airplane",
