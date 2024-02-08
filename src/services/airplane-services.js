@@ -17,12 +17,11 @@ async function createAirplane(data)
     }
 }
 
-
-async function getAirplane()
+async function getAllAirplanes()
 {
     try{
-const airplane=await airplaneRepo.getAll();
-return airplane;
+const airplanes=await airplaneRepo.getAll();
+return airplanes;
     }
     catch(error){
 LoggerConfig.error(error);
@@ -31,8 +30,22 @@ throw error;
     }
 }
 
+async function getAirplane(id)
+{
+    try{
+const airplane=await airplaneRepo.get(id)
+return airplane;
+    }
+    catch(error)
+    {
+        throw error;
+
+    }
+}
+
 module.exports={
     createAirplane,
+    getAllAirplanes,
     getAirplane
 }
 

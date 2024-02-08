@@ -31,16 +31,16 @@ class CrudRepository {
     // }
 
 
-    // async get(data)
-    // {
-    //     try {
-    //         const response=await this.model.findByPk(data);
-    //         return response;
-    //     } catch (error) {
-    //         LoggerConfig.error('something wrong while creating model');
-    //         throw error;
-    //     }
-    // }
+ async get(data)
+    {
+        try {
+            const response=await this.model.findByPk(data);
+            return response;
+        } catch (error) {
+            LoggerConfig.error('something wrong while creating model');
+            throw error;
+        }
+    }
 
      async getAll(data)
      {

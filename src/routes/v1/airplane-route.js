@@ -5,4 +5,5 @@ const router=express.Router();
 
 router.post('/',AirplaneController.createAirplane);
 router.get('/',AirplaneController.getAllAirplane);
+router.get('/:id',AirplaneController.getAirplane);
 module.exports=router;
