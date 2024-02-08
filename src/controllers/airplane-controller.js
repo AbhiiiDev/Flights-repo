@@ -10,15 +10,15 @@ async function createAirplane(req,res)
             modelNumber:req.body.modelNumber,
             capacity:req.body.capacity,
         });
-       await console.log(airplane)
+        console.log(airplane)
         return res.status(StatusCodes.CREATED).json({
             success:true,
-            message:"successfully crated the airplane",
+            message:"successfully created the airplane",
             data:airplane,
             error:{}
         })
     } catch (error) {
-        return res.status(StatusCodes.BAD_GATEWAY).json({
+        return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
             success:false,
             message:"can't able to create aiplane",
             data:{},
@@ -27,6 +27,28 @@ async function createAirplane(req,res)
     }
 }
 
+async function getAllAirplane(req,res) {
+    try {
+        const airplanes=await AirplaneService.getAirplane();
+        return res.status(StatusCodes.OK).json({
+            success:true,
+            message:"All airplanes are there",
+            data:airplanes,
+            error:{}
+        })
+    } catch (error) {
+        return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            success:false,
+            message:"can't able to get aiplanes",
+            data:{},
+            error:error
+        })
+        
+    }
+}
+
+
 module.exports={
-    createAirplane
+    createAirplane,
+    getAllAirplane
 }

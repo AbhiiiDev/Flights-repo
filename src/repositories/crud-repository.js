@@ -42,16 +42,16 @@ class CrudRepository {
     //     }
     // }
 
-    // async getAll(data)
-    // {
-    //     try {
-    //         const response=await this.model.findAll(data);
-    //         return response;
-    //     } catch (error) {
-    //         LoggerConfig.error('something wrong while creating model');
-    //         throw error;
-    //     }
-    // }
+     async getAll(data)
+     {
+         try {
+             const response=await this.model.findAll(data);
+             return response;
+         } catch (error) {
+             LoggerConfig.error('something wrong while creating model');
+             throw error;
+         }
+    }
 
 }
 

@@ -4,4 +4,5 @@ const { AirplaneController } = require('../../controllers');
 const router=express.Router();
 
 router.post('/',AirplaneController.createAirplane);
+router.get('/',AirplaneController.getAllAirplane);
 module.exports=router;

@@ -6,7 +6,6 @@ const CrudRepository=require('./crud-repository');
 class AirplaneRepo extends CrudRepository {
     constructor()
     {
-
         super(Airplane);
     }
 }
