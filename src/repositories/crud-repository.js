@@ -29,6 +29,9 @@ class CrudRepository {
                     id:data
                 }
             });
+            if(!response){
+                throw new AppError('Not able to find the resouse',StatusCodes.NOT_FOUND);
+            }
             return response;
         } catch (error) {
             LoggerConfig.error('something wrong while creating model');
