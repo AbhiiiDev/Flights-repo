@@ -1,68 +1,39 @@
-2024-02-08 01:08:01 : info: successfully started the server
-2024-02-08 01:08:05 : error: something wrong while creating model
-2024-02-08 01:08:48 : info: successfully started the server
-2024-02-08 01:09:05 : info: successfully started the server
-2024-02-08 01:09:34 : info: successfully started the server
-2024-02-08 01:09:37 : error: something wrong while creating model
-2024-02-08 01:10:11 : info: successfully started the server
-2024-02-08 01:10:13 : error: something wrong while creating model
-2024-02-08 01:12:51 : info: successfully started the server
-2024-02-08 01:12:53 : error: something wrong while creating model
-2024-02-08 01:13:31 : info: successfully started the server
-2024-02-08 01:13:33 : error: something wrong while creating model
-2024-02-08 01:13:52 : info: successfully started the server
-2024-02-08 01:13:56 : error: something wrong while creating model inside crud-repo
-2024-02-08 01:14:47 : info: successfully started the server
-2024-02-08 01:15:11 : error: something wrong while creating model inside crud-repo
-2024-02-08 01:18:00 : info: successfully started the server
-2024-02-08 01:18:01 : error: something wrong while creating model inside crud-repo
-2024-02-08 01:19:04 : error: something wrong while creating model inside crud-repo
-2024-02-08 01:19:05 : error: something wrong while creating model inside crud-repo
-2024-02-08 01:47:52 : info: successfully started the server
-2024-02-08 01:47:53 : info: successfully started the server
-2024-02-08 01:48:26 : error: something wrong while creating model inside crud-repo
-2024-02-08 01:50:05 : error: something wrong while creating model inside crud-repor
-2024-02-09 02:35:45 : info: successfully started the server
-2024-02-09 02:35:47 : info: successfully started the server
-2024-02-09 02:36:08 : info: successfully started the server
-2024-02-09 02:36:10 : info: successfully started the server
-2024-02-09 02:36:16 : info: successfully started the server
-2024-02-09 02:36:21 : info: successfully started the server
-2024-02-09 02:36:58 : info: successfully started the server
-2024-02-09 02:37:30 : info: successfully started the server
-2024-02-09 02:37:32 : info: successfully started the server
-2024-02-09 02:37:35 : info: successfully started the server
-2024-02-09 03:03:17 : info: successfully started the server
-2024-02-09 03:05:07 : info: successfully started the server
-2024-02-09 03:06:04 : info: successfully started the server
-2024-02-09 03:06:17 : info: successfully started the server
-2024-02-09 03:09:10 : info: successfully started the server
-2024-02-09 03:09:38 : info: successfully started the server
-2024-02-09 03:15:08 : info: successfully started the server
-2024-02-09 03:17:07 : info: successfully started the server
-2024-02-09 03:17:34 : info: successfully started the server
-2024-02-09 03:17:45 : info: successfully started the server
-2024-02-09 03:17:55 : info: successfully started the server
-2024-02-09 03:18:45 : info: successfully started the server
-2024-02-09 03:18:53 : info: successfully started the server
-2024-02-09 03:20:33 : info: successfully started the server
-2024-02-09 03:20:39 : info: successfully started the server
-2024-02-09 03:21:04 : info: successfully started the server
-2024-02-12 19:48:09 : info: successfully started the server
-2024-02-12 19:48:39 : info: successfully started the server
-2024-02-12 19:50:23 : info: successfully started the server
-2024-02-12 19:52:27 : info: successfully started the server
-2024-02-12 19:52:34 : info: successfully started the server
-2024-02-12 19:52:36 : info: successfully started the server
-2024-02-12 19:52:40 : info: successfully started the server
-2024-02-12 19:52:42 : info: successfully started the server
-2024-02-12 19:52:45 : info: successfully started the server
-2024-02-12 19:52:47 : info: successfully started the server
-2024-02-12 19:52:49 : info: successfully started the server
-2024-02-12 19:52:51 : info: successfully started the server
-2024-02-12 19:52:55 : info: successfully started the server
-2024-02-12 19:53:38 : info: successfully started the server
+
 2024-02-12 19:55:41 : info: successfully started the server
 2024-02-12 19:56:00 : error: something wrong while creating model
 2024-02-12 19:56:13 : error: something wrong while creating model
 2024-02-12 19:58:22 : info: successfully started the server
+2024-02-12 20:05:53 : info: successfully started the server
+2024-02-12 20:05:55 : error: something wrong while creating model
+2024-02-12 20:09:08 : info: successfully started the server
+2024-02-12 20:09:14 : error: something wrong while creating model
+2024-02-12 20:41:00 : info: successfully started the server
+2024-02-12 20:42:18 : info: successfully started the server
+2024-02-13 01:21:50 : info: successfully started the server
+2024-02-13 01:21:51 : info: successfully started the server
+2024-02-13 01:22:48 : info: successfully started the server
+2024-02-13 01:22:54 : error: something wrong while creating model inside crud-repo
+2024-02-13 01:23:06 : info: successfully started the server
+2024-02-13 01:23:18 : info: successfully started the server
+2024-02-13 01:23:24 : info: successfully started the server
+2024-02-13 01:23:25 : info: successfully started the server
+2024-02-13 01:24:11 : error: something wrong while creating model inside crud-repo
+2024-02-13 01:27:46 : error: something wrong while creating model inside crud-repo
+2024-02-13 01:28:13 : error: something wrong while creating model inside crud-repo
+2024-02-13 01:28:28 : error: something wrong while creating model inside crud-repo
+2024-02-14 00:21:47 : info: successfully started the server
+2024-02-14 00:37:57 : info: successfully started the server
+2024-02-14 00:42:46 : info: successfully started the server
+2024-02-14 00:42:58 : info: successfully started the server
+2024-02-14 00:43:11 : info: successfully started the server
+2024-02-14 00:43:16 : info: successfully started the server
+2024-02-14 00:43:43 : info: successfully started the server
+2024-02-14 00:44:43 : info: successfully started the server
+2024-02-14 00:44:47 : info: successfully started the server
+2024-02-14 00:44:52 : info: successfully started the server
+2024-02-14 00:44:54 : info: successfully started the server
+2024-02-14 00:44:55 : info: successfully started the server
+2024-02-14 00:44:56 : info: successfully started the server
+2024-02-14 00:44:58 : info: successfully started the server
+2024-02-14 00:44:59 : info: successfully started the server
+2024-02-14 00:45:01 : info: successfully started the server

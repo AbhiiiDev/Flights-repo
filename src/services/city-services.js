@@ -17,6 +17,21 @@ async function createCity(data) {
   }
 }
 
+
+async function destroyCity(data) {
+  console.log("inside city-service");
+
+  try {
+    const city = await cityRepo.destroy(data);
+    // console.log(airplane)
+    return city;
+  } catch (error) {
+    throw new AppError('Cannot delete city object', StatusCodes.INTERNAL_SERVER_ERROR);
+  }
+}
+
+
 module.exports={
-    createCity
+    createCity,
+    destroyCity
 }
