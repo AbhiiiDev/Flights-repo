@@ -17,6 +17,15 @@ async function createCity(data) {
   }
 }
 
+async function getCity(data)
+{
+  try {
+    const cities=await cityRepo.getAll(data);
+    return cities;
+  } catch (error) {
+    throw new AppError('Cannot find city object', StatusCodes.INTERNAL_SERVER_ERROR);
+  }
+}
 
 async function destroyCity(data) {
   console.log("inside city-service");
@@ -47,6 +56,7 @@ async function updateCity(id,data)
 
 module.exports={
     createCity,
+    getCity,
     destroyCity,
     updateCity
 }
