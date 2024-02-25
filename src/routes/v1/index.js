@@ -7,10 +7,12 @@ const {InfoController}=require('../../controllers/index');
 const AirplaneRoutes=require('./airplane-route');
 const CityRoutes=require('./city-route');
 const AirportRoutes=require('./airport-routes')
+const FlightRoutes=require('./flight-routes');
 
 router.use('/airplane',AirplaneRoutes)
 router.use('/city',CityRoutes);
 router.use('/airport',AirportRoutes);
+router.use('/flight',FlightRoutes);
 
 router.get('/info',InfoController.info);
 

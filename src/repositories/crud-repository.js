@@ -10,10 +10,11 @@ class CrudRepository {
 
     async create(data)
     {
-        console.log(data)
+        // console.log(data)
         try {
             const response=await this.model.create(data);
             return response;
+          
         } catch (error) {
             LoggerConfig.error('something wrong while creating model inside crud-repo');
             throw error;
