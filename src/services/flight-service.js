@@ -18,7 +18,25 @@ async function createFlight(data)
     }
 }
 
+async function getAllFlights(query)
+{
+ let customFilter={};
+ if(query.trips)
+ [departureAirportId,arrivalAirportId]=query.trips.split("-");
+
+customFilter.departureAirportId=departureAirportId;
+customFilter.arrivalAirportId=arrivalAirportId;
+
+try {
+    const flights=await flightRepo.getAllFlights(customFilter);
+    return flights;
+} catch (error) {
+    throw new AppError('can not fetch flights you requested',StatusCodes.INTERNAL_SERVER_ERROR);
+}
+}
 
 module.exports={
-    createFlight
+    createFlight,
+    getAllFlights
 }
+
