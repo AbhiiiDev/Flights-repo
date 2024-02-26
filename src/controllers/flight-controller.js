@@ -1,7 +1,8 @@
 const {FlightService}=require('../services');
 const {StatusCodes}=require('http-status-codes');
 
-const {SuccessResponse,ErrorResponse}=require('../utils/common')
+const {SuccessResponse,ErrorResponse}=require('../utils/common');
+const AppError = require('../utils/errors/app-error');
 
 async function createFlight(req,res)
 {
@@ -33,8 +34,19 @@ async function getAllFlights(req,res)
         SuccessResponse.data=flights;
         return res.status(StatusCodes.OK).json(SuccessResponse);
     } catch (error) {
-        ErrorResponse.error=error;
-        res.status(error.statusCode).json(ErrorResponse);
+        const ErrorResponse = {
+            error: {
+                message: error.message || 'Internal Server Error', // Use a default message if error message is not available
+                statusCode: error.statusCode || 500 // Use a default status code if statusCode is not available
+            }
+        };
+    
+        // Set the error object
+        ErrorResponse.error = error;
+    
+        // Send the response with appropriate status code
+        res.status(ErrorResponse.error.statusCode).json(ErrorResponse);
+      
     }
 }
 
