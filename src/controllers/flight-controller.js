@@ -17,9 +17,8 @@ async function createFlight(req,res)
             boardingGate:req.body.boardingGate,
             totalSeats:req.body.totalSeats
         })
-      
         SuccessResponse.data= flight;
-        return res.status(StatusCodes.OK).json(SuccessResponse);
+        return res.status(StatusCodes.CREATED).json(SuccessResponse);
     } catch (error) {
         ErrorResponse.error=error;
         return res.status(error.statusCode).json(ErrorResponse);
