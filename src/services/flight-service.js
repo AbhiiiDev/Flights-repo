@@ -4,6 +4,7 @@ const { FlightRepository } = require("../repositories");
 
 const flightRepo=new FlightRepository();
 
+
 async function createFlight(data)
 {
     try {
