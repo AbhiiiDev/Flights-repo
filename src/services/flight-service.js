@@ -22,7 +22,8 @@ async function createFlight(data)
 async function getAllFlights(query)
 {
  let customFilter={};
- const sortFilter=[];
+ let sortFilter=[];
+
  const endingTripTime = " 23:59:00";
  if(query.trips)
 { [departureAirportId,arrivalAirportId]=query.trips.split("-");
@@ -47,14 +48,20 @@ if(query.tripDate)
 
 if(query.sort)
 {
-    console.log(query.sort)
+
     const params=query.sort.split(',');
     const sortFilters=params.map((param)=>
     param.split("_"));
+console.log(sortFilters);
 
-    sortFilter=sortFilters
+    sortFilter = [...sortFilters];
+  
+    console.log(sortFilter);
+
+   
+ 
 }
-console.log(customFilter,sortFilter)
+
 try {
     const flights=await flightRepo.getAllFlights(customFilter,sortFilter);
     return flights;
