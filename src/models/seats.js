@@ -1,5 +1,7 @@
 "use strict";
 const { Model } = require("sequelize");
+const { SeatTypes } = require("../utils/common");
+const { BUSINESS, ECONOMY, PREMIUM_ECONOMY, FIRST_CLASS } = SeatTypes.SEAT_TYPE;
 module.exports = (sequelize, DataTypes) => {
   class seats extends Model {
     /**
@@ -9,10 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.belongsTo(models.Airplane,{
-        foreignKey:'airplaneId',
-        onDelete:'CASCADE'
-      })
+      this.belongsTo(models.Airplane, {
+        foreignKey: "airplaneId",
+        onDelete: "CASCADE",
+      });
     }
   }
   seats.init(
@@ -21,6 +23,12 @@ module.exports = (sequelize, DataTypes) => {
 
       row: { type: DataTypes.INTEGER, allowNull: false },
       col: { type: DataTypes.STRING, allowNull: false },
+      type: {
+        type: DataTypes.ENUM,
+        allowNull: false,
+        values: [BUSINESS, ECONOMY, FIRST_CLASS, PREMIUM_ECONOMY],
+        defaultValue: ECONOMY,
+      },
     },
     {
       sequelize,

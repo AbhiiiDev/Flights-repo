@@ -1,4 +1,6 @@
 'use strict';
+const { SeatTypes } = require("../utils/common");
+const { BUSINESS, ECONOMY, PREMIUM_ECONOMY, FIRST_CLASS } = SeatTypes.SEAT_TYPE;
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -25,6 +27,12 @@ module.exports = {
       col: {
         type: Sequelize.STRING,
         allowNull:false
+      },
+      type: {
+        type: Sequelize.ENUM,
+        allowNull: false,
+        values: [BUSINESS, ECONOMY, FIRST_CLASS, PREMIUM_ECONOMY],
+        defaultValue: ECONOMY,
       },
       createdAt: {
         allowNull: false,
