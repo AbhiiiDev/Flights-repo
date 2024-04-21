@@ -12,7 +12,7 @@ const FlightRoutes=require('./flight-routes');
 router.use('/airplane',AirplaneRoutes)
 router.use('/city',CityRoutes);
 router.use('/airport',AirportRoutes);
-router.use('/flight',FlightRoutes);
+router.use('/flights',FlightRoutes);
 
 router.get('/info',InfoController.info);
 

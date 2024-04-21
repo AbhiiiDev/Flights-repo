@@ -70,8 +70,28 @@ try {
 }
 }
 
+
+
+async function getFlight(id)
+{
+try {
+    const flight=await flightRepo.get(id);
+    return flight;
+} catch (error) {
+    if(error.StatusCode===StatusCodes.NOT_FOUND)
+    {
+        throw new AppError(
+            "The flight you requested doesn't exist",
+            error.StatusCode
+        )
+    }
+}
+}
+
+
 module.exports={
     createFlight,
-    getAllFlights
+    getAllFlights,
+    getFlight
 }
 
