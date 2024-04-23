@@ -88,10 +88,22 @@ try {
 }
 }
 
+async function updateSeats(data)
+{
+    try {
+        const response=await flightRepo.updateSeats(data.flightId,data.seats,data.dec);
+        return response;
+    } catch (error) {
+        console.error(error);
+        throw new AppError("cannot update the flight",StatusCodes.INTERNAL_SERVER_ERROR);
+
+    }
+}
 
 module.exports={
     createFlight,
     getAllFlights,
-    getFlight
+    getFlight,
+    updateSeats
 }
 
